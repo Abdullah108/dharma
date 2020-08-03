@@ -1,0 +1,177 @@
+.SideDrawerWrapper {
+  /* overflow: hidden;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 500;
+  transition: 0.75s ease; */
+}
+
+.SideDrawer {
+  display: none;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  z-index: 501;
+  margin-bottom: 1.5rem;
+  padding-top: 0 !important;
+}
+
+.SideDrawer * {
+  color: rgba(0, 0, 0, 0.65) !important;
+  font-weight: 600 !important;
+}
+
+.SmartWallet .SideDrawer {
+  background-color: #000;
+}
+
+.SmartWallet .SideDrawer .DropdownIndicator {
+  border-color: #fff;
+}
+
+.SmartWallet .SideDrawer * {
+  color: #fff !important;
+}
+
+.SideDrawer > .Title,
+.SideDrawer > .SearchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  padding-top: 0px;
+}
+
+.SideDrawer > .SearchContainer button {
+  padding: 0.75rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  margin-right: 0 !important;
+}
+.SideDrawer > .SearchContainer input[type="search"] {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  width: 15rem;
+  min-width: 9rem;
+  display: block;
+  background-color: rgb(231, 235, 235);
+}
+
+.SideDrawer .Search {
+  position: relative;
+}
+
+.SideDrawer .Search > img {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 1.5rem;
+}
+
+.SideDrawer button.ContactUs {
+  padding: 0.75rem 0.5rem !important;
+  margin-left: 0 !important;
+  border: 1px solid #e3e3e3;
+  /* color: #535a72 ; */
+  color: #fff !important;
+  font-weight: 500;
+  border: none;
+}
+
+.SideDrawer .NavItem {
+  text-align: left;
+  padding: 1rem 0;
+  padding-top: 0px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  height: 48px;
+}
+
+.SideDrawer .ContactUs {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1172e5;
+  margin-top: 0.8rem;
+}
+
+.SideDrawer .DropdownIndicator {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  display: inline-block;
+  border-bottom: 2px solid #000000a6;
+  border-left: 2px solid #000000a6;
+  transition: 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.SideDrawer .DropdownIndicator.Up {
+  transform: rotate(135deg);
+}
+
+.SideDrawer .DropDownContent {
+  display: none;
+  text-align: left !important;
+  font-weight: 400;
+  margin-left: 0.75vh;
+}
+
+.SideDrawer .SocialWrapper {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SideDrawer .SocialWrapper > img {
+  width: 3rem;
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .SideDrawer {
+    padding: 1rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SideDrawer.Active {
+    display: block;
+    animation: comeInView 0.75s ease;
+    animation-fill-mode: forwards;
+  }
+
+  .SideDrawerWrapper.Active {
+    display: block;
+  }
+  .SideDrawer {
+    position: relative;
+    margin-top: 2vh;
+  }
+}
+
+.Faq_wrapper .SideDrawer {
+  top: 2%;
+  transform: translateY(0);
+}
+.makeStyles-root-1,
+.makeStyles-root-31 {
+  height: 84px;
+}
+.jss1 {
+  height: 84px;
+}
